@@ -1,3 +1,4 @@
+pip install nltk
 import nltk as nltk
 nltk.download('punkt')
 nltk.download('punkt_tab')
