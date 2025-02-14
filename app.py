@@ -1,5 +1,4 @@
-pip install nltk
-import nltk
+import nltk as nltk
 nltk.download('punkt')
 nltk.download('punkt_tab')
 nltk.download('stopwords')
