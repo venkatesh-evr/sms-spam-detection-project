@@ -37,8 +37,12 @@ def transform_text(text):
     return " ".join(y)
 
 
-tk = pickle.load(open("vectorized.pkl", 'rb'))
-model = pickle.load(open("model.pkl", 'rb'))
+
+try:
+    model = pickle.load(open("C:/Users/ASUS/sms-spam-detection-project/vectorized.pkl", 'rb'))
+except Exception as e:
+    st.error(f"Error loading model: {e}")
+
 
 st.title("SMS Spam Detection Model")
 st.write("Developed by venkatesh-evr")
