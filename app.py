@@ -36,7 +36,7 @@ def transform_text(text):
     return " ".join(y)
 
 try:
-    vectorizer = pickle.load(open("C:/Users/ASUS/sms-spam-detection-project/vectorizer.pkl", 'rb'))
+    vectorizer = pickle.load(open("C:/Users/ASUS/sms-spam-detection-project/vectorized.pkl", 'rb'))
     model = pickle.load(open("C:/Users/ASUS/sms-spam-detection-project/model.pkl", 'rb'))
 except Exception as e:
     st.error(f"Error loading model or vectorizer: {e}")
